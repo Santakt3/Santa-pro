@@ -1,5 +1,5 @@
 # Các bạn đã mua và build lại bị lỗi đọc và chỉnh lại 2 file giúp shop ạ. Cập nhật lại
-## mục config có West.yml và mục workflows có build_pipar_firmwares.yml
+## trong repositories của bạn đã fork về mục config có West.yml và mục workflows có build_pipar_firmwares.yml
 ### Bạn nhấn vào chọn hình cây viết phía bên phải thay "main"="v0.3"
 #### Hoặc xoá đi fork lại repositories này mình đã sửa 2 mục đó.
 
