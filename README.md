@@ -1,6 +1,6 @@
 # Các bạn đã mua và build lại bị lỗi đọc và chỉnh lại 2 file giúp shop ạ. Cập nhật lại
 ## trong repositories của bạn đã fork về mục config có West.yml và mục workflows có build_pipar_firmwares.yml
-### Bạn nhấn vào chọn hình cây viết phía bên phải thay "main"="v0.3"
+### Bạn nhấn vào chọn hình cây viết phía bên phải rồi thay chữ "main"="v0.3"
 #### Hoặc xoá đi fork lại repositories này mình đã sửa 2 mục đó.
 
 # Đối với các bạn vừa mua thì vẫn keymap bình thường ạ. Lỗi liên hệ zalo: 0336905265 để mình hỗ trợ và gửi link hoặc hình ảnh hỗ trợ rõ ràng
