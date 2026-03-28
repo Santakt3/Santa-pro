@@ -18,10 +18,68 @@
         triggers-per-rotation = <24>;
     };
 
+    macros {
+        new_macro_1: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp N1>;
+            label = "NEW_MACRO";
+        };
+
+        aew_macro_2: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp N2>;
+            label = "NEW_MACRO";
+        };
+
+        bew_macro_3: new_macro3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp N3>;
+            label = "NEW_MACRO3";
+        };
+
+        cew_macro_4: new_macro4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp N4>;
+            label = "NEW_MACRO4";
+        };
+
+        dew_macro_5: new_macro5 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp N5>;
+            label = "NEW_MACRO5";
+        };
+
+        eew_macro_6: new_macro6 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp N6>;
+            label = "NEW_MACRO6";
+        };
+
+        few_macro_7: new_macro7 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp N7>;
+            label = "NEW_MACRO7";
+        };
+
+        gew_macro_8: new_macro8 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp N8>;
+            label = "NEW_MACRO8";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        Keyboard_layer {
             // ---------------------------//
             // | Q    | W     | ENCODER | //
             // | A    | S     | D       | //
@@ -29,12 +87,12 @@
 
             display-name = "default";
             bindings = <
-&kp TAB         &kp LEFT_WIN    &to 1
-&kp BACKSPACE   &kp UP_ARROW    &kp ENTER
-&kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
+&few_macro_7  &gew_macro_8  &to 1
+&cew_macro_4  &dew_macro_5  &eew_macro_6
+&new_macro_1  &aew_macro_2  &bew_macro_3
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
         };
 
         function_layer {
@@ -45,20 +103,12 @@
 
             display-name = "function";
             bindings = <
-&bt BT_CLR    &none         &to 2
+&bt BT_CLR    &none         &to 0
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2
 &bt BT_SEL 3  &bt BT_SEL 4  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
-        };
-
-        layer_2 {
-            bindings = <
-&kp C_PAUSE  &kp PRINTSCREEN  &to 0
-&kp INS      &kp HOME         &kp LC(C)
-&kp DELETE   &kp END          &kp LC(V)
-            >;
         };
     };
 };
