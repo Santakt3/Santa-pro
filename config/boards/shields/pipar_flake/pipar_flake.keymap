@@ -13,7 +13,16 @@
 #define FUNC        1
 
 / {
-  
+  // Định nghĩa behavior tùy chỉnh cho encoder
+  behaviors {
+    custom_encoder: custom_encoder {
+      compatible = "zmk,behavior-sensor-rotate";
+      label = "CUSTOM_ENCODER";
+      #sensor-binding-cells = <0>;
+      bindings = <&kp>, <&kp>;
+    };
+  };
+
   sensors: sensors {
     compatible = "zmk,keymap-sensors";
     sensors = <&encoder_1>;
@@ -35,7 +44,8 @@
             &kp LEFT &kp DOWN   &kp RIGHT
         >;
 
-      sensor-bindings = <&inc_dec_kp C_VOL_DN  C_VOL_UP>;
+      // Xoay phải: A + 9, Xoay trái: A + 0
+      sensor-bindings = <&custom_encoder>;
     };
 
     function_layer {
