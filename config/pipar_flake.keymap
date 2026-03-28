@@ -89,7 +89,7 @@
             bindings = <
 &few_7  &gew_8  &to 1
 &cew_4  &dew_5  &eew_6
-&kp A   &aew_2  &bew_3
+&new_1  &aew_2  &bew_3
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
