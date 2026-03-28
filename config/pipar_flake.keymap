@@ -26,11 +26,11 @@
             label = "NEW_MACRO";
         };
 
-        aew_2: new_macro {
+        aew_2: new_macro_2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp A &kp N2>;
-            label = "NEW_MACRO";
+            label = "NEW_MACRO2";
         };
 
         bew_3: new_macro3 {
