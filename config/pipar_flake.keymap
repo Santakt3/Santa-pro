@@ -79,13 +79,13 @@
     keymap {
         compatible = "zmk,keymap";
 
-        Keyboard_layer {
+        Keyboard {
             // ---------------------------//
             // | Q    | W     | ENCODER | //
             // | A    | S     | D       | //
             // | Z    | X     | FN      | //
 
-            display-name = "default";
+            display-name = "keyboard";
             bindings = <
 &few_7  &gew_8  &to 1
 &cew_4  &dew_5  &eew_6
