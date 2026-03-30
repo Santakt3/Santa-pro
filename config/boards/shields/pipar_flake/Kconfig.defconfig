@@ -1,7 +1,7 @@
 if SHIELD_PIPAR_FLAKE
 
 config ZMK_KEYBOARD_NAME
-    default "PiparFlake"
+    default "Santa_Pro"
 
 if ZMK_DISPLAY
 
