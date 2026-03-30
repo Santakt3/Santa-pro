@@ -1,6 +1,6 @@
 file_format: "1"
 id: pipar_flake
-name: PiparFlake
+name: Santa_Pro
 type: shield
 url: https://github.com/RasmusKoit/pipar
 requires: [pro_micro]
